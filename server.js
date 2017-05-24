@@ -9,10 +9,9 @@ const {BlogPosts} = require('./models.js');
 
 
 app.use(morgan('common'));
-// BlogPost.create();
 
-
-BlogPosts.create("horse", "test", "saule");
+BlogPosts.create('horse','test','saule');
+BlogPosts.create('milk','test','Sandy');
 
 app.get('/blog-post', (req, res) => {
 
@@ -21,7 +20,7 @@ app.get('/blog-post', (req, res) => {
 });
 
 
-
+app.delete('/blog-post',(req,res)=>{res.json(BlogPosts.delete());});
 
 app.listen(process.env.PORT || 8080, () => {
   console.log(`Your app is listening on port ${process.env.PORT || 8080}`);
