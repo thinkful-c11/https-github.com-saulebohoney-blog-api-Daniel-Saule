@@ -1,0 +1,24 @@
+{
+  "name": "blogapi",
+  "version": "1.0.0",
+  "description": "blog api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saulebohoney/blog-api-Daniel-Saule.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saulebohoney/blog-api-Daniel-Saule/issues"
+  },
+  "homepage": "https://github.com/saulebohoney/blog-api-Daniel-Saule#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "uuid": "^3.0.1"
+  }
+}
